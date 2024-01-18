@@ -27,7 +27,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar hidden />
+      <StatusBar translucent hidden />
       <Stack.Navigator>
         <Stack.Screen name="home" component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name="animals" component={AnimalsScreen} options={{ headerShown: false }} />

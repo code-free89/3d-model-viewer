@@ -17,6 +17,7 @@
     "expo": "^49.0.0",
     "expo-asset": "^8.10.1",
     "expo-gl": "^13.2.0",
+    "expo-screen-orientation": "~6.0.6",
     "expo-status-bar": "~1.6.0",
     "expo-three": "^7.0.0",
     "r3f-native-orbitcontrols": "^1.0.9",

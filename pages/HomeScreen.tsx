@@ -32,7 +32,7 @@ export default function HomeScreen({ navigation }: Props) {
       </View>
       <View style={styles.item}>
         <TouchableRipple style={styles.link} onPress={() => navigation.push("implement_your")}>
-          <Image source={require("../assets/icons/implement_your.jpeg")} style={styles.image} />
+          <Image source={require("../assets/icons/implement_yore.jpeg")} style={styles.image} />
         </TouchableRipple>
       </View>
       <View style={styles.item}>

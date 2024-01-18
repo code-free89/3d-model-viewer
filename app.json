@@ -27,6 +27,14 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "plugins": [
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "5d58d28e-3c2e-4570-a05c-a674d3fe6668"

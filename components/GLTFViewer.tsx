@@ -1,13 +1,14 @@
 import { Suspense } from "react";
-import { PerspectiveCamera } from "three";
 import { useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-export default function GLTFViewer({ modelPath }: { modelPath: string }) {
-  const camera = new PerspectiveCamera();
-  camera.position.set(15, 30, 30);
-  camera.lookAt(0, 0, 0);
-
+export default function GLTFViewer({
+  modelPath,
+  isLocalAsset = true,
+}: {
+  modelPath: string;
+  isLocalAsset: boolean;
+}) {
   useGLTF.preload(modelPath);
   const { scene } = useGLTF(modelPath);
 
@@ -21,7 +22,7 @@ export default function GLTFViewer({ modelPath }: { modelPath: string }) {
         position: [500, 30, 30],
       }}
       style={{
-        backgroundColor: "#111111",
+        backgroundColor: "black",
         flex: 1,
       }}
     >
